@@ -8,6 +8,13 @@
 background-color: rgb(167, 20, 20);
 padding: 0.5%;
 }
+#nav i{
+    margin-right: 8px;
+    font-size: small;
+}
+#nav #bars , #check{
+    display: none;
+}
 #nav ul{
 display: flex;
 list-style-type: none;
@@ -139,6 +146,22 @@ background-color: rgb(167, 20, 20);
 }
 #nav ul li a{
 color: whitesmoke;
+}
+#nav ul li a i{
+    display: none;
+}
+#nav #bars{
+    display: block;
+}
+#nav #bars{
+    color: whitesmoke;
+    font-size: larger;
+}
+#nav ul{
+display: none;
+}
+#nav #check:checked~ul{
+    display: block;
 }
     /* Main*/
 #services h3 {
