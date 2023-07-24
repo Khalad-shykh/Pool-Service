@@ -11,6 +11,7 @@ padding: 0.5%;
 #nav i{
     margin-right: 8px;
     font-size: small;
+
 }
 #nav #bars{
     display: none;
@@ -116,6 +117,9 @@ font-weight: bold;
 font-family: 'Montserrat Alternates', sans-serif;
 margin-top: -1%;
 }
+#pic_submenu{
+    display: none;
+}
 /* Footer*/
 #footer{
 background-color: rgb(167, 20, 20);
@@ -158,9 +162,6 @@ color: whitesmoke;
    height: 30px;
    margin-top: 2%;
 }
-#nav ul{
-    display: none;
-}
 
     /* Main*/
 #services h3 {
@@ -179,7 +180,28 @@ border-top: none;
 #sidemenu ul #border-bottom{ 
 border-bottom: none;
 }
+#nav ul{
+   position: relative;
+   top: -100%;
+   transition: all 2s;
+   }
+#nav ul{
+    display: none;
 }
+#nav i{
+    width: 5%;
+}
+#nav .abc{
+    display: block;
+}
+#pic_submenu{
+    display: block;
+    width: 100%;
+    padding: 0%;
+}
+
+}
+
 @media only screen and (max-width:576px) {
 #services{
 flex-direction: column;
